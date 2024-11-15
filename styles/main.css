@@ -188,15 +188,16 @@ header {
 footer {
   display: flex;
   row-gap: 2rem;
-  flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
 
   nav ul {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 2rem;
     margin-bottom: 0;
+    padding: 0;
 
     li {
       list-style: none;
@@ -217,5 +218,90 @@ footer {
   img {
     cursor: pointer;
     text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .termos {
+    padding: 2vh 12vw 2vh 12vw;
+  }
+
+  footer {
+
+    nav ul {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  button {
+    padding: 20px 40px;
+  }
+
+  .lista {
+    overflow: scroll;
+  }
+
+  .ads {
+    height: 30vh;
+
+    .conteudo {
+      margin-top: 10vh;
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  body {
+    font-size: 12px;
+  }
+
+  button {
+    padding: 10px 20px;
+  }
+
+  header {
+    nav {
+      display: none;
+    }
+  }
+
+  .hero {
+    height: 40vh;
+
+    .conteudo {
+      margin-top: 15vh;
+      text-align: center;
+
+      .titulo,
+      .descricao {
+        display: none;
+      }
+    }
+  }
+
+  .termos {
+    padding: 2vh 4vw 2vh 4vw;
   }
 }
