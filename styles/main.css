@@ -48,13 +48,12 @@ button {
   text-transform: uppercase;
 }
 
-.btn-white {
-  border: 3px solid #212121;
+button:hover {
+  filter: drop-shadow(2px 2px 4px #212121);
 }
 
 .btn-black {
-  color: #9a9999;
-  border: 3px solid #212121;
+  color: #fff;
   background-color: #212121;
 }
 
